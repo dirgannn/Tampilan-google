@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.nav {
+  height: 5vh;
+  z-index: 10;
+  padding: 2rem 0;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+
+.nav-list {
+  margin-top: -15px;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-item {
+  font-size: 16px;
+  margin: 0 1.9rem;
+  list-style: none;
+}
+
+.nav h2 {
+  border-radius: 50%;
+  background-color: rgb(154, 75, 179);
+  padding: 7px;
+  height: 37px;
+  width: 37px;
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  border-bottom: 3px solid rgba(35, 140, 253, 0.879);
+}
+
+header .overlay {
+  position: absolute;
+  opacity: 0.7;
+  background-color: black;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+header .yay {
+  height: 100%;
+  z-index: 1;
+  background-image: url("img/hck.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yay-hh {
+  text-align: center;
+  position: fixed;
+}
+
+.yay-hh img {
+  position: relative;
+  top: 20px;
+  margin-bottom: 100px;
+}
+
+.yay-hh input {
+  position: absolute;
+  top: 40%;
+  left: 23.8%;
+  margin-top: 0;
+  opacity: 0.2;
+  border: 0.1px solid;
+  border-radius: 20px;
+  height: 34px;
+  margin: 3% 0;
+  text-align: center;
+  width: 52.5%;
+  font-weight: bold;
+}
+
+.yay-wk .yay1-list {
+  display: flex;
+  list-style: none;
+}
+
+.yay1-item {
+  top: -28px;
+  position: relative;
+  margin: 0 22.2rem;
+}
+
+.gatau-btn {
+  position: relative;
+  top: -20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+h3 {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  position: relative;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  text-align: center;
+  padding: 16px;
+  line-height: 2px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+h3:hover {
+  display: flex;
+  border: 2px solid #dcdcdc;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item a:hover {
+  border-bottom: 2px solid;
+}
+
+.yay-list {
+  display: flex;
+  font-weight: 50;
+  align-items: center;
+  justify-content: center;
+}
+
+.yay-item {
+  margin: 0 0.7rem;
+  list-style: none;
+}
+
+.yay-item a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 770px) {
+  .nav li {
+    display: none;
+  }
+
+  .yay-wk input {
+    color: black;
+    position: relative;
+    top: -60px;
+    left: 1%;
+    text-align: center;
+    width: 60%;
+  }
+
+  .yay1-item {
+    top: -94px;
+    left: 1%;
+    margin: 0 5.5rem;
+  }
+
+  .yay-item {
+    font-size: 13px;
+  }
+  .gatau {
+    position: relative;
+    margin-top: -30px;
+  }
+}
